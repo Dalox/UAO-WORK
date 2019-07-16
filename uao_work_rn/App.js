@@ -2,6 +2,8 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
+ * @author Jesus Daniel Neira Lara
+ * 
  * @format
  * @flow
  */
@@ -10,6 +12,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 import Colors from './app/styles/colors'
 import Styles from './app/styles/styles'
+import Navigator from './app/navigator/navigator';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -18,12 +21,15 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+//type Props = {}
+
 export default class App extends Component {
   render() {
     return (
-      <View style={[Styles.container_full]}>
+      <Navigator/>
+      /*<View style={[Styles.container_full]}>
         <Image style={[Styles.icon_dark, {width: 75, height: 75}]} source={require('./app/src/uao_logo.png')} />
-      </View>
+      </View>*/
     );
   }
 }
