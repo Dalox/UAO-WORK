@@ -19,6 +19,10 @@ export default StyleSheet.create({
         paddingVertical: 35,
         paddingHorizontal: 50
     },
+    icon: {
+        width: 25,
+        height: 25,
+    },
     icon_light: {
         width: 25,
         height: 25,
@@ -45,7 +49,8 @@ export default StyleSheet.create({
         backgroundColor: Colors.primary.default,
         paddingVertical: 15,
         paddingHorizontal: 30,
-        borderRadius: 5
+        borderRadius: 5,
+        marginVertical: 5
     },
     txt: {
         fontSize: 15,
@@ -95,7 +100,9 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center',
         padding: 5,
-        marginVertical: 5
+        marginVertical: 5,
+        borderBottomColor: Colors.primary.light,
+        borderBottomWidth: 2
     },
     icon_input: {
         flex: 2,

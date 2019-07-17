@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {View, Text} from 'react-native';
-import Colors from '../styles/colors'
-import Styles from '../styles/styles'
+import Colors from '../../styles/colors'
+import Styles from '../../styles/styles'
 
 export default class App extends Component {
     render() {

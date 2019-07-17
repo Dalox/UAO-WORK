@@ -2,17 +2,27 @@ import React, { Component } from 'react';
 import {Image,Text, View} from 'react-native';
 import Colors from '../styles/colors'
 import Styles from '../styles/styles'
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default class App extends Component {
     
     static navigationOptions = {
-        header: null
     }
 
     componentDidMount() {
-        setTimeout(() => {
+        setTimeout( async () => {
             //console.warn('TimeOut')
-            this.props.navigation.navigate('Signin')
+            var user = await AsyncStorage.getItem('UserInfo') // Verificar si hay información de inicio previo
+            //console.warn(user)
+            /**
+             * Si ya se ha iniciado secion saltar al Main.
+             * Si no ir a Signin
+             */
+            if(user != null){
+              this.props.navigation.navigate('Main')
+            }else {
+              this.props.navigation.navigate('Signin')
+            }
         },1500)
     }
 

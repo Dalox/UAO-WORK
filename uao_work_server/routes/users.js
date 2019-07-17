@@ -25,6 +25,7 @@ router.post('/signin', function(req, res, next) {
     if(err){
       res.json(null)
     }else{
+      console.log(rows)
       if(rows[0].password == req.body.password) {
         res.json(rows[0])
       }else{
