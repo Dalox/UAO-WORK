@@ -7,23 +7,35 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignContent: 'center',
-        ...StyleSheet.absoluteFillObject
+        ...StyleSheet.absoluteFillObject,
+        paddingVertical: 35,
+        paddingHorizontal: 75
     },
     container_center: {
-        flex: 1,
+        flex: 0,
         justifyContent: 'center',
         alignItems: 'center',
         alignContent: 'center',
+        paddingVertical: 35,
+        paddingHorizontal: 50
     },
     icon_light: {
         width: 25,
         height: 25,
-        tintColor: Colors.primary.light
+        tintColor: Colors.primary.light,
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
     },
     icon_dark: {
         width: 25,
         height: 25,
-        tintColor: Colors.primary.dark
+        tintColor: Colors.primary.dark,
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
     },
     btn:{
         //flex: 1,
@@ -32,7 +44,8 @@ export default StyleSheet.create({
         alignItems: 'center',
         backgroundColor: Colors.primary.default,
         paddingVertical: 15,
-        //paddingHorizontal: 30
+        paddingHorizontal: 30,
+        borderRadius: 5
     },
     txt: {
         fontSize: 15,
@@ -50,6 +63,9 @@ export default StyleSheet.create({
     txt_dark: {
         color: '#000'
     },
+    txt_primary: {
+        color: Colors.primary.default
+    },
     title: {
         fontSize: 30,
         textAlign: "center",
@@ -57,7 +73,11 @@ export default StyleSheet.create({
     },
     subtitle: {
         fontSize: 20,
-        textAlign: "center"
+        textAlign: "center",
+        marginVertical: 10
+    },
+    bg_primary: {
+        backgroundColor: Colors.primary.default
     },
     bg_white: {
         backgroundColor: '#fff'
@@ -66,5 +86,19 @@ export default StyleSheet.create({
         margin: 10,
         width: 250,
         height: 250
+    },
+    icon_fileds: {
+        flex: 0,
+        flexDirection: "row",
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        padding: 5,
+        marginVertical: 5
+    },
+    icon_input: {
+        flex: 2,
+        alignSelf: 'flex-start'
     }
 });

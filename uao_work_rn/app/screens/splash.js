@@ -4,10 +4,14 @@ import Colors from '../styles/colors'
 import Styles from '../styles/styles'
 
 export default class App extends Component {
+    
+    static navigationOptions = {
+        header: null
+    }
 
     componentDidMount() {
         setTimeout(() => {
-            console.warn('TimeOut')
+            //console.warn('TimeOut')
             this.props.navigation.navigate('Signin')
         },1500)
     }

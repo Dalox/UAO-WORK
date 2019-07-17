@@ -12,6 +12,7 @@ import SignIn from '../screens/signin'
 const MainStack = createStackNavigator({
     Splash: {screen: Splash},
     Signin: {screen: SignIn},
+    Main: {screen: Main}
 })
 
 export default createAppContainer(MainStack);
