@@ -73,10 +73,19 @@ const MainBottomTab = createBottomTabNavigator({
 const MainStack = createStackNavigator({
     Splash: {screen: Splash},
     Signin: {screen: SignIn},
-    Main: {screen: MainBottomTab}
+    Main: {screen: MainBottomTab, navigationOptions: {
+        title: 'UAO WORK',
+          headerStyle: {
+            backgroundColor: Colors.primary.default,
+            fontStyle: 'normal',
+            /*elevation: 0, // remove shadow on Android
+            shadowOpacity: 0, // remove shadow on iOS*/
+          },
+          headerTintColor: '#FFFFFF',
+          headerLeft: null
+    }}
 },{
     defaultNavigationOptions: {
-        header: null
     }
 })
 

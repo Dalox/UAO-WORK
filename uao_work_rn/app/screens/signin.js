@@ -19,6 +19,7 @@ export default class App extends Component {
     }
 
     static navigationOptions = {
+        header: null
     }
 
     _signin = async () => {

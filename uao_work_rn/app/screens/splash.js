@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 export default class App extends Component {
     
     static navigationOptions = {
+      header: null
     }
 
     componentDidMount() {

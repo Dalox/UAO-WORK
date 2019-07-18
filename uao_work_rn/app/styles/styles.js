@@ -22,11 +22,25 @@ export default StyleSheet.create({
     icon: {
         width: 25,
         height: 25,
+        tintColor: '#ccc',
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
     },
     icon_light: {
         width: 25,
         height: 25,
         tintColor: Colors.primary.light,
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+    icon_primary:{
+        width: 25,
+        height: 25,
+        tintColor: Colors.primary.default,
         alignContent: 'center',
         alignItems: 'center',
         justifyContent: 'center',
@@ -107,5 +121,22 @@ export default StyleSheet.create({
     icon_input: {
         flex: 2,
         alignSelf: 'flex-start'
+    },
+    list_item: {
+        flex: 1,
+        paddingVertical: 15,
+        paddingHorizontal: 10,
+        borderBottomColor: '#ccc',
+        borderBottomWidth: 1,
+        flexDirection: 'row'
+    },
+    list_icon: {
+        flex: 0,
+        justifyContent: 'center',
+        alignContent: 'center',
+        alignItems: 'center'
+    },
+    list_text: {
+        flex: 4
     }
 });
